@@ -21,7 +21,7 @@ public class TestBase {
         driver.manage().window().maximize();
 
         openSite("https://trello.com");
-        login("elena.telran@yahoo.com", "12345.com");
+        login("irinaz.inbox@gmail.com", "zu17rina91");
     }
 
     public void login(String email, String password) {
