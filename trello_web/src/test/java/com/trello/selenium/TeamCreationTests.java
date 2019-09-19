@@ -8,8 +8,8 @@ import org.testng.annotations.Test;
 public class TeamCreationTests extends  TestBase{
     @BeforeClass
     public void ensurePreconditionsLogin(){
-        if(!app.getTeamHelper().isUserLoggedIn()){
-            app.getTeamHelper().login("irinaz.inbox@gmail.com", "kh17rina91");
+        if(!app.getSessionHelper().isUserLoggedIn()){
+            app.getSessionHelper().login("irinaz.inbox@gmail.com", "kh17rina91");
         }
     }
 
@@ -29,8 +29,8 @@ public class TeamCreationTests extends  TestBase{
         int before = app.getTeamHelper().getTeamsCount();
         app.getTeamHelper().clickOnPlusButtonOnHeader();
         app.getTeamHelper().selectCreateTeamFromDropDown();
-        String teamName = "qa21-"+ System.currentTimeMillis();
-        app.getTeamHelper().fillTeamCreationForm(teamName, "descr qa 21");
+        String teamName = "QA21-"+ System.currentTimeMillis();
+        app.getTeamHelper().fillTeamCreationForm(teamName, "description QA21");
         app.getTeamHelper().clickContinueButton();
         //  String createdTeamName = getTeamNameFromTeamPage();
         app.getTeamHelper().returnToHomePage();
@@ -63,15 +63,15 @@ public class TeamCreationTests extends  TestBase{
     }
 
     @Test(enabled=false)
-    public void testTeamCuncellCreationFromPlusButtonOnHeader(){
-        app.clickOnPlusButtonOnHeader();
-        app.selectCreateTeamFromDropDown();
-        app.fillTeamCreationForm("qa21", "descr qa 21");
-        app.clickXButton();
-        //Assert
+    public void testTeamCancelCreationFromPlusButtonOnHeader(){
+        app.getTeamHelper().clickOnPlusButtonOnHeader();
+        app.getTeamHelper().selectCreateTeamFromDropDown();
+        app.getTeamHelper().fillTeamCreationForm("QA 21", "description QA21");
+        app.getTeamHelper().clickXButton();
 
 
-        Assert.assertTrue(app.isUserLoggedIn());
+
+        Assert.assertTrue(app.getSessionHelper().isUserLoggedIn());
     }
 
 

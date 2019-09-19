@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.trello.selenium.TeamCreationTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-09-16T17:00:11" hostname="DESKTOP-79N8AM4" time="16.799">
+<testsuite name="com.trello.selenium.TeamCreationTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-09-19T07:00:23" hostname="DESKTOP-79N8AM4" time="14.613">
   <properties/>
-  <testcase name="testTeamCreationFromLeftNavMenu" classname="com.trello.selenium.TeamCreationTests" time="9.695"/>
-  <testcase name="testTeamCreationFromPlusButtonOnHeader" classname="com.trello.selenium.TeamCreationTests" time="7.08"/>
+  <testcase name="testTeamCreationFromLeftNavMenu" classname="com.trello.selenium.TeamCreationTests" time="7.969"/>
+  <testcase name="testTeamCreationFromPlusButtonOnHeader" classname="com.trello.selenium.TeamCreationTests" time="6.622"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

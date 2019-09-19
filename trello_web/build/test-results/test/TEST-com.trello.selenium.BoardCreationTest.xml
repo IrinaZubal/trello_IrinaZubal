@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.trello.selenium.BoardCreationTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2019-09-16T17:00:37" hostname="DESKTOP-79N8AM4" time="0.424">
+<testsuite name="com.trello.selenium.BoardCreationTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2019-09-19T07:00:45" hostname="DESKTOP-79N8AM4" time="0.468">
   <properties/>
-  <testcase name="testBoardCreation" classname="com.trello.selenium.BoardCreationTest" time="0.424">
-    <failure message="org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document&#10;  (Session info: chrome=76.0.3809.132)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-79N8AM4', ip: '10.0.0.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53342}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: f10b2f9d9ac18518fbadf40b0c85977b" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  <testcase name="testBoardCreation" classname="com.trello.selenium.BoardCreationTest" time="0.468">
+    <failure message="org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document&#10;  (Session info: chrome=76.0.3809.132)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-79N8AM4', ip: '10.100.102.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58869}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: f3ad8c26d8db1aa0a1c9d696a86bd106" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
   (Session info: chrome=76.0.3809.132)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-79N8AM4', ip: '10.0.0.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+System info: host: 'DESKTOP-79N8AM4', ip: '10.100.102.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53342}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f10b2f9d9ac18518fbadf40b0c85977b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58869}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f3ad8c26d8db1aa0a1c9d696a86bd106
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -22,8 +22,8 @@ Session ID: f10b2f9d9ac18518fbadf40b0c85977b
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at com.trello.selenium.ApplicationManager.type(ApplicationManager.java:39)
-	at com.trello.selenium.ApplicationManager.fillBoardCreationForm(ApplicationManager.java:78)
+	at com.trello.selenium.HelperBase.type(HelperBase.java:25)
+	at com.trello.selenium.BoardHelper.fillBoardCreationForm(BoardHelper.java:12)
 	at com.trello.selenium.BoardCreationTest.testBoardCreation(BoardCreationTest.java:13)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)

@@ -44,4 +44,7 @@ public class HelperBase {
         } else
             waitForElementAndClick(By.cssSelector("a[href='/']"),15);
     }
+    public void refreshPage() {
+        driver.navigate().refresh();
+    }
 }

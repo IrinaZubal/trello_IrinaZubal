@@ -40,6 +40,19 @@ public class TeamHelper extends HelperBase {
     public void clickXButton() {
 
     }
+    public void clickOnFirstTeam() {
+        click(By.cssSelector("[data-test-id^='home-team-tab-section-']"));
+    }
+
+    public void openSettings() throws InterruptedException {
+        Thread.sleep(5000);
+        click(By.xpath("//*[@class='icon-gear icon-sm OiX3P2i2J92Xat']/../../.."));
+    }
+    public void deleteTeam() throws InterruptedException {
+        Thread.sleep(5000);
+        click(By.cssSelector(".quiet-button"));
+        click(By.cssSelector(".js-confirm"));
+    }
 
     public void cleanTeams() throws InterruptedException{
         int count = getTeamsCount();
@@ -47,7 +60,7 @@ public class TeamHelper extends HelperBase {
             clickOnFirstTeam();
             openSettings();
             deleteTeam();
-            returnToHomePage();
+            //returnToHomePage();
             refreshPage();
             count = getTeamsCount();
             System.out.println(count);
