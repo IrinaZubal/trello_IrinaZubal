@@ -4,10 +4,11 @@
 
     <test name="RegressionTrello">
         <classes>
-            <class name="com.trello.selenium.TeamCreationTests"/>
-            <class name="com.trello.selenium.TeamDeletionTest"/>
-            <class name="com.trello.selenium.BoardCreationTest"/>
-            <class name="com.trello.selenium.BoardDeletionTest"/>
+            <class name="com.trello.qa.tests.TeamCreationTests"/>
+            <class name="com.trello.qa.tests.TeamModificationTests"/>
+            <class name="com.trello.qa.tests.TeamDeletionTest"/>
+            <class name="com.trello.qa.tests.BoardCreationTest"/>
+            <class name="com.trello.qa.tests.BoardDeletionTest"/>
         </classes>
     </test>
 </suite>
