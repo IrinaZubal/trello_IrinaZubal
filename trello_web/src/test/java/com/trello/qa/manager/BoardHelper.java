@@ -1,6 +1,7 @@
 package com.trello.qa.manager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -40,4 +41,8 @@ public class BoardHelper extends HelperBase{
         click(By.xpath("//*[@class='icon-lg icon-member']/../../..//li"));
     }
 
+    public void changeBoardName(String BoardName) {
+        type(By.cssSelector(".js-board-editing-target board-header-btn-text"),BoardName+Keys.ENTER);
+
+    }
 }
