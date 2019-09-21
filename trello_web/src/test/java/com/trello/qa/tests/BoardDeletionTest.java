@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class BoardDeletionTest extends  TestBase{
     @Test
     public void deletionBoardTest() throws InterruptedException {
-        int before = app.getBoardHelper().getPersnalBoardsCount();
+        int before = app.getBoardHelper().getPersonalBoardsCount();
         clickOnFirstPrivateBoard();
         Thread.sleep(10000);
         clickOnMoreButtonInBoardMenu();
@@ -15,7 +15,7 @@ public class BoardDeletionTest extends  TestBase{
         //..
 
 
-        int after = app.getBoardHelper().getPersnalBoardsCount();
+        int after = app.getBoardHelper().getPersonalBoardsCount();
     }
 
     public void clickOnMoreButtonInBoardMenu() {

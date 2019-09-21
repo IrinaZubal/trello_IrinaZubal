@@ -2,10 +2,15 @@ package com.trello.qa.manager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BoardHelper extends HelperBase{
+
+
     public BoardHelper(WebDriver driver) {
         super(driver);
+
     }
 
     public void fillBoardCreationForm(String boardName, String s) {
@@ -26,7 +31,13 @@ public class BoardHelper extends HelperBase{
         click(By.cssSelector("[data-test-id='header-create-board-submit-button']"));
     }
 
-    public int getPersnalBoardsCount() {
+    public int getPersonalBoardsCount() {
         return driver.findElements(By.xpath("//*[@class='icon-lg icon-member']/../../..//li")).size()-1;
     }
+
+    public void clickOnFirstPrivateBoard() {
+        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@class='icon-lg icon-member']/../../..//li")));
+        click(By.xpath("//*[@class='icon-lg icon-member']/../../..//li"));
+    }
+
 }

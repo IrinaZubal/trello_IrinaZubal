@@ -23,17 +23,14 @@ public class ApplicationManager {
     }
 
     public void init() {
-        String browser = null;
+      //  String browser = null;
         if(browser.equals(BrowserType.CHROME)){
             driver = new ChromeDriver();
         }if(browser.equals(BrowserType.FIREFOX)){
             driver = new FirefoxDriver();
-        }if(browser.equals(BrowserType.IE)){
-            driver = new InternetExplorerDriver();
         }
 
-
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         teamHelper = new TeamHelper(driver);
         boardHelper = new BoardHelper(driver);
