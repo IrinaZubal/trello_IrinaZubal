@@ -42,7 +42,12 @@ public class BoardHelper extends HelperBase{
     }
 
     public void changeBoardName(String BoardName) {
-        type(By.cssSelector(".js-board-editing-target board-header-btn-text"),BoardName+Keys.ENTER);
+        //new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector(".js-board-editing-target board-header-btn-text")));
+
+      //  click(By.cssSelector(".js-board-editing-target board-header-btn-text"));
+        click(By.xpath("//span[@class='js-board-editing-target board-header-btn-text']"));
+
+        type(By.xpath("//input[@class='board-name-input js-board-name-input']"),BoardName);
 
     }
 }
