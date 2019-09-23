@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.trello.qa.tests.TeamCreationTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-09-23T17:17:45" hostname="DESKTOP-79N8AM4" time="160.769">
+  <properties/>
+  <testcase name="testTeamCreationFromPlusButtonOnHeaderWithDataProvider[0](name, description)" classname="com.trello.qa.tests.TeamCreationTests" time="32.149"/>
+  <testcase name="testTeamCreationFromPlusButtonOnHeaderWithDataProvider[1](NAME, DESC)" classname="com.trello.qa.tests.TeamCreationTests" time="32.068"/>
+  <testcase name="testTeamCreationFromPlusButtonOnHeaderWithDataProvider[2](12345, 678991)" classname="com.trello.qa.tests.TeamCreationTests" time="32.192"/>
+  <testcase name="testTeamCreationFromPlusButtonOnHeaderWithDataProvider[3](&amp;&amp;**(, @#$%^_^)" classname="com.trello.qa.tests.TeamCreationTests" time="32.274"/>
+  <testcase name="testTeamCreationFromPlusButtonOnHeaderWithDataProvider[4](name, )" classname="com.trello.qa.tests.TeamCreationTests" time="31.918"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

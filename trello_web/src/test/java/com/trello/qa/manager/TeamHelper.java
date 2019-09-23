@@ -17,9 +17,9 @@ public class TeamHelper extends HelperBase {
         click(By.cssSelector("[type=submit]"));
     }
 
-    public void fillTeamCreationForm(String teamName, String description) {
-        type(By.cssSelector("[data-test-id='header-create-team-name-input']"), teamName);
-        type(By.cssSelector("textarea"), description);
+    public void fillTeamCreationForm(TeamData team) {
+        type(By.cssSelector("[data-test-id='header-create-team-name-input']"), team.getTeamName());
+        type(By.cssSelector("textarea"), team.getDescription());
     }
 
     public void selectCreateTeamFromDropDown() {

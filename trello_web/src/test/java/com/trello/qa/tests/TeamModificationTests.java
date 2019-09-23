@@ -1,9 +1,21 @@
 package com.trello.qa.tests;
 
+import com.trello.qa.manager.TeamData;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class TeamModificationTests extends TestBase {
+
+    @BeforeMethod
+    public void preconditions(){
+        if(app.getTeamHelper().getTeamsCount()<1){
+            app.getTeamHelper().clickOnPlusButtonOnHeader();
+            app.getTeamHelper().fillTeamCreationForm(new TeamData().withTeamName("QA").withDescription("descr QA"));
+            app.getTeamHelper().clickContinueButton();
+            app.getTeamHelper().returnToHomePage();
+        }
+    }
 
 
 
