@@ -54,4 +54,7 @@ public class HelperBase {
     public void refreshPage() {
         driver.navigate().refresh();
     }
+
+
+
 }

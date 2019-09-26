@@ -10,10 +10,10 @@ import org.testng.annotations.Test;
 public class TeamDeletionTest extends TestBase {
 
     @Test
-    public void deleteTeamFromLeftNavMenu() {
+    public void deleteTeamFromLeftNavMenu() throws InterruptedException {
         int before = app.getTeamHelper().getTeamsCount();
         clickOnFirstTeam();
-        openSettings();
+       app.getTeamHelper().openSettings();
         deleteTeam();
         app.getTeamHelper().refreshPage();
 
@@ -29,10 +29,6 @@ public class TeamDeletionTest extends TestBase {
                 .until(ExpectedConditions.elementToBeClickable(By.cssSelector(".quiet-button")));
         app.getTeamHelper().click(By.cssSelector(".quiet-button"));
         app.getTeamHelper().click(By.cssSelector(".js-confirm"));
-    }
-
-    public void openSettings() {
-        app.getTeamHelper().click(By.cssSelector(".icon-gear.icon-sm.OiX3P2i2J92Xat"));
     }
 
     public void clickOnFirstTeam() {

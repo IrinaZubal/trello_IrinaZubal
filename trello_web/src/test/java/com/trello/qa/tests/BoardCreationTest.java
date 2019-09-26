@@ -1,6 +1,7 @@
 package com.trello.qa.tests;
 
 
+import com.trello.qa.model.BoardData;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;

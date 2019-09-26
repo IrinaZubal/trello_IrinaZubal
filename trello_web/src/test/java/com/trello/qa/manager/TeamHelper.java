@@ -1,5 +1,6 @@
 package com.trello.qa.manager;
 
+import com.trello.qa.model.TeamData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -46,10 +47,7 @@ public class TeamHelper extends HelperBase {
         click(By.cssSelector("[data-test-id^='home-team-tab-section-']"));
     }
 
-    public void openSettings() throws InterruptedException {
-        Thread.sleep(5000);
-        click(By.xpath("//*[@class='icon-gear icon-sm OiX3P2i2J92Xat']/../../.."));
-    }
+
     public void deleteTeam() throws InterruptedException {
         Thread.sleep(5000);
         click(By.cssSelector(".quiet-button"));
@@ -83,6 +81,15 @@ public class TeamHelper extends HelperBase {
 
     public void confirmEditTeam() {
         click(By.cssSelector(".js-submit-profile"));
+    }
+
+    public void openSettings() throws InterruptedException {
+
+        Thread.sleep(5000);
+        click(By.cssSelector("ul .icon-gear.icon-sm"));
+
+        //app.getTeamHelper().click(By.cssSelector(".icon-gear icon-sm OiX3P2i2J92Xat"));
+        //app.getTeamHelper().click(By.cssSelector(".icon-gear.icon-sm.OiX3P2i2J92Xat"));
     }
 
 }

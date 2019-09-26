@@ -1,6 +1,5 @@
 package com.trello.qa.tests;
-import com.trello.qa.manager.TeamData;
-import net.bytebuddy.agent.builder.AgentBuilder;
+import com.trello.qa.model.TeamData;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -122,8 +121,9 @@ public class TeamCreationTests extends  TestBase{
         //  Assert.assertEquals(createdTeamName.toLowerCase(), teamName.toLowerCase());
     }
     @Test(dataProvider = "validTeamsFromcsv")
-    public void testTeamCreationFromPlusButtonOnHeaderWithDataProviderFromcsv(String teamName, String description) throws InterruptedException {
-        TeamData team = new TeamData().withTeamName(teamName).withDescription(description);
+    public void testTeamCreationFromPlusButtonOnHeaderWithDataProviderFromcsv(TeamData team){
+
+       // TeamData team = new TeamData().withTeamName(teamName).withDescription(description);
         int before = app.getTeamHelper().getTeamsCount();
         app.getTeamHelper().clickOnPlusButtonOnHeader();
         app.getTeamHelper().selectCreateTeamFromDropDown();
