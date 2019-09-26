@@ -31,7 +31,9 @@ public class HelperBase {
 
 
     }
-
+    public boolean isTherePersonalBoards() {
+        return isElementPresent(By.xpath("//*[@class='icon-lg icon-member']/../../.."));
+    }
     public boolean isElementPresent(By locator) {
         return driver.findElements(locator).size()>0;
     }

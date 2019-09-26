@@ -47,7 +47,28 @@ public class BoardHelper extends HelperBase{
       //  click(By.cssSelector(".js-board-editing-target board-header-btn-text"));
         click(By.xpath("//span[@class='js-board-editing-target board-header-btn-text']"));
 
-        type(By.xpath("//input[@class='board-name-input js-board-name-input']"),BoardName);
+        typeBoardModification(By.xpath("//input[@class='board-name-input js-board-name-input']"),BoardName);
 
+    }
+
+    private void typeBoardModification(By locator, String text) {
+
+            driver.findElement(locator);
+            //driver.findElement(locator).clear();
+            driver.findElement(locator).sendKeys(text);
+
+    }
+
+    public void createBoard() {
+        clickOnPlusButtonOnHeader();
+        selectCreateBoardFromDropDown();
+        fillBoardCreationForm("QA 21", "descr QA21");
+        confirmBoardCreation();
+        returnToHomePage();
+        refreshPage();
+    }
+
+    public boolean findBoardByName(String nBoardName) {
+        return driver.findElement(By.xpath("//*[@class='icon-lg icon-member']/../../..//li")).getText().equals(nBoardName);
     }
 }
