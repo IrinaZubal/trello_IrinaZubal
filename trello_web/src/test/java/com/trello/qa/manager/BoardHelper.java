@@ -1,7 +1,7 @@
 package com.trello.qa.manager;
 
+import com.trello.qa.tests.BoardData;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -14,8 +14,8 @@ public class BoardHelper extends HelperBase{
 
     }
 
-    public void fillBoardCreationForm(String boardName, String s) {
-        type(By.cssSelector("[data-test-id='header-create-board-title-input']"), boardName);
+    public void fillBoardCreationForm(BoardData board) {
+        type(By.cssSelector("[data-test-id='header-create-board-title-input']"), board.getBoardName());
 
         if(isElementPresent(By.cssSelector(".W6rMLOx8U0MrPx"))){
             click(By.cssSelector(".W6rMLOx8U0MrPx"));
@@ -62,7 +62,7 @@ public class BoardHelper extends HelperBase{
     public void createBoard() {
         clickOnPlusButtonOnHeader();
         selectCreateBoardFromDropDown();
-        fillBoardCreationForm("QA 21", "descr QA21");
+        fillBoardCreationForm(new BoardData().withBoardName("QA 21"));
         confirmBoardCreation();
         returnToHomePage();
         refreshPage();
