@@ -70,69 +70,69 @@ public class TeamCreationTests extends  TestBase{
         //  Assert.assertEquals(createdTeamName.toLowerCase(), teamName.toLowerCase());
     }
 
-//    @Test
-//    public void testTeamCreationFromLeftNavMenu() throws InterruptedException {
-//        int before = app.getTeamHelper().getTeamsCount();
-//        clickOnPlusButtonOnLeftNavMenu();
-//        app.getTeamHelper().fillTeamCreationForm(new TeamData().withTeamName("h").withDescription("g"));
-//        app.getTeamHelper().clickContinueButton();
-//        String createdTeamName = app.getTeamHelper().getTeamNameFromTeamPage();
-//        app.getTeamHelper().returnToHomePage();
-//        //  refreshPage();
-//        int after = app.getTeamHelper().getTeamsCount();
-//
-//        Assert.assertEquals(after, before+1);
-//        Assert.assertEquals(createdTeamName, "h");
-//    }
-//
-//
-//
-//    public void clickOnPlusButtonOnLeftNavMenu() {
-//        app.getTeamHelper().click(By.cssSelector(".icon-add.icon-sm"));
-//    }
-//
-//    @Test(enabled=false)
-//    public void testTeamCancelCreationFromPlusButtonOnHeader(){
-//        app.getTeamHelper().clickOnPlusButtonOnHeader();
-//        app.getTeamHelper().selectCreateTeamFromDropDown();
-//        app.getTeamHelper().fillTeamCreationForm(new TeamData().withTeamName("QA 21").withDescription("description QA21"));
-//        app.getTeamHelper().clickXButton();
-//
-//
-//
-//        Assert.assertTrue(app.getSessionHelper().isUserLoggedIn());
-//    }
-//    @Test(dataProvider = "validTeams")
-//    public void testTeamCreationFromPlusButtonOnHeaderWithDataProvider(String teamName, String description) throws InterruptedException {
-//       TeamData team = new TeamData().withTeamName(teamName).withDescription(description);
-//        int before = app.getTeamHelper().getTeamsCount();
-//        app.getTeamHelper().clickOnPlusButtonOnHeader();
-//        app.getTeamHelper().selectCreateTeamFromDropDown();
-//      //  String teamName = "QA21-"+ System.currentTimeMillis();
-//        app.getTeamHelper().fillTeamCreationForm(team);
-//        app.getTeamHelper().clickContinueButton();
-//        //  String createdTeamName = getTeamNameFromTeamPage();
-//        app.getTeamHelper().returnToHomePage();
-//        int after = app.getTeamHelper().getTeamsCount();
-//        Assert.assertEquals(after, before+1);
-//        //  Assert.assertEquals(createdTeamName.toLowerCase(), teamName.toLowerCase());
-//    }
-//    @Test(dataProvider = "validTeamsFromcsv")
-//    public void testTeamCreationFromPlusButtonOnHeaderWithDataProviderFromcsv(TeamData team){
-//
-//       // TeamData team = new TeamData().withTeamName(teamName).withDescription(description);
-//        int before = app.getTeamHelper().getTeamsCount();
-//        app.getTeamHelper().clickOnPlusButtonOnHeader();
-//        app.getTeamHelper().selectCreateTeamFromDropDown();
-//        //  String teamName = "QA21-"+ System.currentTimeMillis();
-//        app.getTeamHelper().fillTeamCreationForm(team);
-//        app.getTeamHelper().clickContinueButton();
-//        //  String createdTeamName = getTeamNameFromTeamPage();
-//        app.getTeamHelper().returnToHomePage();
-//        int after = app.getTeamHelper().getTeamsCount();
-//        Assert.assertEquals(after, before+1);
-//        //  Assert.assertEquals(createdTeamName.toLowerCase(), teamName.toLowerCase());
-//    }
+    @Test
+    public void testTeamCreationFromLeftNavMenu() throws InterruptedException {
+        int before = app.getTeamHelper().getTeamsCount();
+        clickOnPlusButtonOnLeftNavMenu();
+        app.getTeamHelper().fillTeamCreationForm(new TeamData().withTeamName("h").withDescription("g"));
+        app.getTeamHelper().clickContinueButton();
+        String createdTeamName = app.getTeamHelper().getTeamNameFromTeamPage();
+        app.getTeamHelper().returnToHomePage();
+        //  refreshPage();
+        int after = app.getTeamHelper().getTeamsCount();
+
+        Assert.assertEquals(after, before+1);
+        Assert.assertEquals(createdTeamName, "h");
+    }
+
+
+
+    public void clickOnPlusButtonOnLeftNavMenu() {
+        app.getTeamHelper().click(By.cssSelector(".icon-add.icon-sm"));
+    }
+
+    @Test(enabled=false)
+    public void testTeamCancelCreationFromPlusButtonOnHeader(){
+        app.getTeamHelper().clickOnPlusButtonOnHeader();
+        app.getTeamHelper().selectCreateTeamFromDropDown();
+        app.getTeamHelper().fillTeamCreationForm(new TeamData().withTeamName("QA 21").withDescription("description QA21"));
+        app.getTeamHelper().clickXButton();
+
+
+
+        Assert.assertTrue(app.getSessionHelper().isUserLoggedIn());
+    }
+    @Test(dataProvider = "validTeams")
+    public void testTeamCreationFromPlusButtonOnHeaderWithDataProvider(String teamName, String description) throws InterruptedException {
+       TeamData team = new TeamData().withTeamName(teamName).withDescription(description);
+        int before = app.getTeamHelper().getTeamsCount();
+        app.getTeamHelper().clickOnPlusButtonOnHeader();
+        app.getTeamHelper().selectCreateTeamFromDropDown();
+      //  String teamName = "QA21-"+ System.currentTimeMillis();
+        app.getTeamHelper().fillTeamCreationForm(team);
+        app.getTeamHelper().clickContinueButton();
+        //  String createdTeamName = getTeamNameFromTeamPage();
+        app.getTeamHelper().returnToHomePage();
+        int after = app.getTeamHelper().getTeamsCount();
+        Assert.assertEquals(after, before+1);
+        //  Assert.assertEquals(createdTeamName.toLowerCase(), teamName.toLowerCase());
+    }
+    @Test(dataProvider = "validTeamsFromcsv")
+    public void testTeamCreationFromPlusButtonOnHeaderWithDataProviderFromcsv(TeamData team){
+
+       // TeamData team = new TeamData().withTeamName(teamName).withDescription(description);
+        int before = app.getTeamHelper().getTeamsCount();
+        app.getTeamHelper().clickOnPlusButtonOnHeader();
+        app.getTeamHelper().selectCreateTeamFromDropDown();
+        //  String teamName = "QA21-"+ System.currentTimeMillis();
+        app.getTeamHelper().fillTeamCreationForm(team);
+        app.getTeamHelper().clickContinueButton();
+        //  String createdTeamName = getTeamNameFromTeamPage();
+        app.getTeamHelper().returnToHomePage();
+        int after = app.getTeamHelper().getTeamsCount();
+        Assert.assertEquals(after, before+1);
+        //  Assert.assertEquals(createdTeamName.toLowerCase(), teamName.toLowerCase());
+    }
 
     @AfterMethod
     public void postAction() throws InterruptedException {
