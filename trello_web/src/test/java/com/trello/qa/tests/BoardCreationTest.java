@@ -2,10 +2,14 @@ package com.trello.qa.tests;
 
 
 import com.trello.qa.model.BoardData;
+import com.trello.qa.model.TeamData;
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -23,22 +27,68 @@ public class BoardCreationTest extends  TestBase {
 
         return list.iterator();
     }
-    @Test(dataProvider = "validBoards")
-    public void testBoardCreationWithDataProvider(String boardName) throws InterruptedException {
-        BoardData board = new BoardData().withBoardName(boardName);
 
-        int beforeCreation = app.getBoardHelper().getPersonalBoardsCount();
-        app.getBoardHelper().clickOnPlusButtonOnHeader();
-        app.getBoardHelper().selectCreateBoardFromDropDown();
-        app.getBoardHelper().fillBoardCreationForm(new BoardData().withBoardName(boardName));
-        app.getBoardHelper().confirmBoardCreation();
-        app.getBoardHelper().returnToHomePage();
+    @DataProvider
+    public Iterator<Object[]> validBoardFromcsv() throws IOException {
+        List<Object[]> list = new ArrayList<>();
+        BufferedReader reader =new BufferedReader (new FileReader(new File("src/test/resources/Board.csv")));
+        String line = reader.readLine();
+        while(line != null){
+            list.add(new Object[]{new BoardData().withBoardName(line)});
+            //BoardData boardData = new BoardData();
+            //list.add(boardData.withBoardName(line));
+            line = reader.readLine();
+        }
 
-        int afterCreation = app.getBoardHelper().getPersonalBoardsCount();
-
-        Assert.assertEquals(afterCreation, beforeCreation + 1);
-
+        return list.iterator();
     }
+    @BeforeClass
+    public void ensurePreconditionsLogin(){
+        if(!app.getSessionHelper().isUserLoggedIn()){
+            app.getSessionHelper().login("irinaz.inbox@gmail.com", "kh17rina91");
+        }
+    }
+
+    @BeforeMethod
+    public void isOnHomePage(){
+        if(!app.getBoardHelper().isTherePersonalBoards()){
+            app.getBoardHelper().returnToHomePage();
+        }
+    }
+
+//
+//    @Test(dataProvider = "validBoards")
+//    public void testBoardCreationWithDataProvider(String boardName) throws InterruptedException {
+//        BoardData board = new BoardData().withBoardName(boardName);
+//
+//        int beforeCreation = app.getBoardHelper().getPersonalBoardsCount();
+//        app.getBoardHelper().clickOnPlusButtonOnHeader();
+//        app.getBoardHelper().selectCreateBoardFromDropDown();
+//        app.getBoardHelper().fillBoardCreationForm(new BoardData().withBoardName(boardName));
+//        app.getBoardHelper().confirmBoardCreation();
+//        app.getBoardHelper().returnToHomePage();
+//
+//        int afterCreation = app.getBoardHelper().getPersonalBoardsCount();
+//
+//        Assert.assertEquals(afterCreation, beforeCreation + 1);
+//
+//    }
+//    @Test(dataProvider = "validBoardFromcsv")
+//    public void testBoardCreationWithDataProviderFromcsv(String boardName) throws InterruptedException {
+//        //BoardData board = new BoardData().withBoardName(boardName);
+//
+//        int beforeCreation = app.getBoardHelper().getPersonalBoardsCount();
+//        app.getBoardHelper().clickOnPlusButtonOnHeader();
+//        app.getBoardHelper().selectCreateBoardFromDropDown();
+//        app.getBoardHelper().fillBoardCreationForm(new BoardData().withBoardName(boardName));
+//        app.getBoardHelper().confirmBoardCreation();
+//        app.getBoardHelper().returnToHomePage();
+//
+//        int afterCreation = app.getBoardHelper().getPersonalBoardsCount();
+//
+//        Assert.assertEquals(afterCreation, beforeCreation + 1);
+//
+//    }
 
     @Test
     public void testBoardCreation() throws InterruptedException {
@@ -53,6 +103,11 @@ public class BoardCreationTest extends  TestBase {
 
         Assert.assertEquals(afterCreation, beforeCreation + 1);
 
+    }
+
+    @AfterClass
+    public void deleteBoardsTillFiveLeft () throws InterruptedException {
+        app.getBoardHelper().deleteBoardsTillFiveLeft();
     }
 
 

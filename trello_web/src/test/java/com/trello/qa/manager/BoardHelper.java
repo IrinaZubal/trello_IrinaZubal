@@ -3,6 +3,7 @@ package com.trello.qa.manager;
 import com.trello.qa.model.BoardData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -70,5 +71,43 @@ public class BoardHelper extends HelperBase{
 
     public boolean findBoardByName(String nBoardName) {
         return driver.findElement(By.xpath("//*[@class='icon-lg icon-member']/../../..//li")).getText().equals(nBoardName);
+    }
+
+    public void clickOnMoreButtonInBoardMenu() {
+        WebElement menuButton = driver.findElement(By.cssSelector(".board-header-btn.mod-show-menu"));
+        System.out.println(menuButton.getCssValue("visibility"));
+        if(menuButton.getCssValue("visibility").equals("visible")){
+            click(By.cssSelector(".mod-show-menu"));
+            click(By.cssSelector(".js-open-more"));
+        } else{
+            click(By.cssSelector(".js-open-more"));
+        }
+
+    }
+
+    public void deleteBoardsTillFiveLeft() throws InterruptedException {
+        int before = getPersonalBoardsCount();
+        while (before > 5) {
+            clickOnFirstPrivateBoard();
+            Thread.sleep(3000);
+            clickOnMoreButtonInBoardMenu();
+            closeBoard();
+            deleteBoard();
+            returnToHomePage();
+
+
+    }
+}
+
+    public void closeBoard() {
+        click(By.cssSelector("[class='board-menu-navigation-item-link js-close-board']"));
+        click(By.cssSelector("[class='js-confirm full negate']"));
+    }
+
+    public void deleteBoard() throws InterruptedException {
+        refreshPage();
+        Thread.sleep(4000);
+        waitForElementAndClick(By.xpath("//a[@class='quiet js-delete']"), 20);
+        click(By.xpath("//input[@class='js-confirm full negate']"));
     }
 }
