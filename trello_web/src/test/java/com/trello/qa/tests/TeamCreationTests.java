@@ -63,6 +63,8 @@ public class TeamCreationTests extends  TestBase{
         String teamName = "QA21-"+ System.currentTimeMillis();
         app.getTeamHelper().fillTeamCreationForm(new TeamData().withTeamName(teamName).withDescription("description QA21"));
         app.getTeamHelper().clickContinueButton();
+
+        app.getTeamHelper().closeInviteYourTeam();
         //  String createdTeamName = getTeamNameFromTeamPage();
         app.getTeamHelper().returnToHomePage();
         int after = app.getTeamHelper().getTeamsCount();
@@ -77,6 +79,7 @@ public class TeamCreationTests extends  TestBase{
         app.getTeamHelper().fillTeamCreationForm(new TeamData().withTeamName("h").withDescription("g"));
         app.getTeamHelper().clickContinueButton();
         String createdTeamName = app.getTeamHelper().getTeamNameFromTeamPage();
+        app.getTeamHelper().closeInviteYourTeam();
         app.getTeamHelper().returnToHomePage();
         //  refreshPage();
         int after = app.getTeamHelper().getTeamsCount();
@@ -92,10 +95,11 @@ public class TeamCreationTests extends  TestBase{
     }
 
     @Test(enabled=false)
-    public void testTeamCancelCreationFromPlusButtonOnHeader(){
+    public void testTeamCancelCreationFromPlusButtonOnHeader() throws InterruptedException {
         app.getTeamHelper().clickOnPlusButtonOnHeader();
         app.getTeamHelper().selectCreateTeamFromDropDown();
         app.getTeamHelper().fillTeamCreationForm(new TeamData().withTeamName("QA 21").withDescription("description QA21"));
+        app.getTeamHelper().closeInviteYourTeam();
         app.getTeamHelper().clickXButton();
 
 
@@ -111,6 +115,7 @@ public class TeamCreationTests extends  TestBase{
       //  String teamName = "QA21-"+ System.currentTimeMillis();
         app.getTeamHelper().fillTeamCreationForm(team);
         app.getTeamHelper().clickContinueButton();
+        app.getTeamHelper().closeInviteYourTeam();
         //  String createdTeamName = getTeamNameFromTeamPage();
         app.getTeamHelper().returnToHomePage();
         int after = app.getTeamHelper().getTeamsCount();
@@ -118,7 +123,7 @@ public class TeamCreationTests extends  TestBase{
         //  Assert.assertEquals(createdTeamName.toLowerCase(), teamName.toLowerCase());
     }
     @Test(dataProvider = "validTeamsFromcsv")
-    public void testTeamCreationFromPlusButtonOnHeaderWithDataProviderFromcsv(TeamData team){
+    public void testTeamCreationFromPlusButtonOnHeaderWithDataProviderFromcsv(TeamData team) throws InterruptedException {
 
        // TeamData team = new TeamData().withTeamName(teamName).withDescription(description);
         int before = app.getTeamHelper().getTeamsCount();
@@ -127,6 +132,7 @@ public class TeamCreationTests extends  TestBase{
         //  String teamName = "QA21-"+ System.currentTimeMillis();
         app.getTeamHelper().fillTeamCreationForm(team);
         app.getTeamHelper().clickContinueButton();
+        app.getTeamHelper().closeInviteYourTeam();
         //  String createdTeamName = getTeamNameFromTeamPage();
         app.getTeamHelper().returnToHomePage();
         int after = app.getTeamHelper().getTeamsCount();

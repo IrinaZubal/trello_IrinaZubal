@@ -92,4 +92,9 @@ public class TeamHelper extends HelperBase {
         //app.getTeamHelper().click(By.cssSelector(".icon-gear.icon-sm.OiX3P2i2J92Xat"));
     }
 
+    public void closeInviteYourTeam() throws InterruptedException {
+
+        Thread.sleep(5000);
+        click(By.cssSelector(".eg0KI5SqghoOFd"));
+    }
 }
