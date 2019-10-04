@@ -73,29 +73,29 @@ public class BoardCreationTest extends  TestBase {
         Assert.assertEquals(afterCreation, beforeCreation + 1);
 
     }
-    @Test(dataProvider = "validBoardFromcsv")
-    public void testBoardCreationWithDataProviderFromcsv(String boardName) throws InterruptedException {
-        //BoardData board = new BoardData().withBoardName(boardName);
-
-        int beforeCreation = app.getBoardHelper().getPersonalBoardsCount();
-        app.getBoardHelper().clickOnPlusButtonOnHeader();
-        app.getBoardHelper().selectCreateBoardFromDropDown();
-        app.getBoardHelper().fillBoardCreationForm(new BoardData().withBoardName(boardName));
-        app.getBoardHelper().confirmBoardCreation();
-        app.getBoardHelper().returnToHomePage();
-
-        int afterCreation = app.getBoardHelper().getPersonalBoardsCount();
-
-        Assert.assertEquals(afterCreation, beforeCreation + 1);
-
-    }
+//    @Test(dataProvider = "validBoardFromcsv")
+//    public void testBoardCreationWithDataProviderFromcsv(String boardName) throws InterruptedException {
+//        //BoardData board = new BoardData().withBoardName(boardName);
+//
+//        int beforeCreation = app.getBoardHelper().getPersonalBoardsCount();
+//        app.getBoardHelper().clickOnPlusButtonOnHeader();
+//        app.getBoardHelper().selectCreateBoardFromDropDown();
+//        app.getBoardHelper().fillBoardCreationForm(new BoardData().withBoardName(boardName));
+//        app.getBoardHelper().confirmBoardCreation();
+//        app.getBoardHelper().returnToHomePage();
+//
+//        int afterCreation = app.getBoardHelper().getPersonalBoardsCount();
+//
+//        Assert.assertEquals(afterCreation, beforeCreation + 1);
+//
+//    }
 
     @Test
     public void testBoardCreation() throws InterruptedException {
         int beforeCreation = app.getBoardHelper().getPersonalBoardsCount();
         app.getBoardHelper().clickOnPlusButtonOnHeader();
         app.getBoardHelper().selectCreateBoardFromDropDown();
-        app.getBoardHelper().fillBoardCreationForm(new BoardData().withBoardName("QA 21"));
+        app.getBoardHelper().fillBoardCreationForm(new BoardData().withBoardName("Apple"));
         app.getBoardHelper().confirmBoardCreation();
         app.getBoardHelper().returnToHomePage();
 

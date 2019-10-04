@@ -60,8 +60,8 @@ public class TeamCreationTests extends  TestBase{
         int before = app.getTeamHelper().getTeamsCount();
         app.getTeamHelper().clickOnPlusButtonOnHeader();
         app.getTeamHelper().selectCreateTeamFromDropDown();
-        String teamName = "QA21-"+ System.currentTimeMillis();
-        app.getTeamHelper().fillTeamCreationForm(new TeamData().withTeamName(teamName).withDescription("description QA21"));
+        String teamName = "Kiwi"+ System.currentTimeMillis();
+        app.getTeamHelper().fillTeamCreationForm(new TeamData().withTeamName(teamName).withDescription("kiwi description"));
         app.getTeamHelper().clickContinueButton();
 
         app.getTeamHelper().closeInviteYourTeam();
@@ -76,7 +76,7 @@ public class TeamCreationTests extends  TestBase{
     public void testTeamCreationFromLeftNavMenu() throws InterruptedException {
         int before = app.getTeamHelper().getTeamsCount();
         clickOnPlusButtonOnLeftNavMenu();
-        app.getTeamHelper().fillTeamCreationForm(new TeamData().withTeamName("h").withDescription("g"));
+        app.getTeamHelper().fillTeamCreationForm(new TeamData().withTeamName("ananas").withDescription("ananas descr"));
         app.getTeamHelper().clickContinueButton();
         String createdTeamName = app.getTeamHelper().getTeamNameFromTeamPage();
         app.getTeamHelper().closeInviteYourTeam();
@@ -85,7 +85,7 @@ public class TeamCreationTests extends  TestBase{
         int after = app.getTeamHelper().getTeamsCount();
 
         Assert.assertEquals(after, before+1);
-        Assert.assertEquals(createdTeamName, "h");
+        Assert.assertEquals(createdTeamName, "ananas");
     }
 
 
@@ -98,7 +98,7 @@ public class TeamCreationTests extends  TestBase{
     public void testTeamCancelCreationFromPlusButtonOnHeader() throws InterruptedException {
         app.getTeamHelper().clickOnPlusButtonOnHeader();
         app.getTeamHelper().selectCreateTeamFromDropDown();
-        app.getTeamHelper().fillTeamCreationForm(new TeamData().withTeamName("QA 21").withDescription("description QA21"));
+        app.getTeamHelper().fillTeamCreationForm(new TeamData().withTeamName("QA").withDescription("description QA"));
         app.getTeamHelper().closeInviteYourTeam();
         app.getTeamHelper().clickXButton();
 

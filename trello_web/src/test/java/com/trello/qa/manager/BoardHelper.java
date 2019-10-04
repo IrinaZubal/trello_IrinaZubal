@@ -94,6 +94,7 @@ public class BoardHelper extends HelperBase{
             closeBoard();
             deleteBoard();
             returnToHomePage();
+            before = getPersonalBoardsCount();
 
 
     }

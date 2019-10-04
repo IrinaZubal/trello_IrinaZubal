@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import javax.swing.*;
 
 
 public class TeamHelper extends HelperBase {
@@ -34,7 +35,7 @@ public class TeamHelper extends HelperBase {
     }
 
     public int getTeamsCount()  {
-        new WebDriverWait(driver, 5)
+        new WebDriverWait(driver, 10)
                 .until(ExpectedConditions.presenceOfElementLocated(
                         By.xpath("//*[@class='_mtkwfAlvk6O3f']/../../..//li")));
         return driver.findElements(By.xpath("//*[@class='_mtkwfAlvk6O3f']/../../..//li")).size();
@@ -63,7 +64,7 @@ public class TeamHelper extends HelperBase {
             //returnToHomePage();
             refreshPage();
             count = getTeamsCount();
-            System.out.println(count);
+           // System.out.println(count);
 
         }
    }
@@ -94,7 +95,10 @@ public class TeamHelper extends HelperBase {
 
     public void closeInviteYourTeam() throws InterruptedException {
 
-        Thread.sleep(5000);
-        click(By.cssSelector(".eg0KI5SqghoOFd"));
+//        Thread.sleep(5000);
+        
+        waitForElementAndClick(By.cssSelector(".eg0KI5SqghoOFd"),10);
+    //    click(By.cssSelector(".eg0KI5SqghoOFd"));
+
     }
 }
