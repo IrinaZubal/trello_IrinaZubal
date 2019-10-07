@@ -1,0 +1,4 @@
+11015 [main] INFO  com.trello.qa.tests.TestBase - start test renameBoardTests
+56311 [main] INFO  com.trello.qa.tests.TestBase - stop test renameBoardTests
+56330 [main] INFO  com.trello.qa.tests.TestBase - start test deletionBoardTest
+109287 [main] INFO  com.trello.qa.tests.TestBase - stop test deletionBoardTest
