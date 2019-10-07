@@ -96,9 +96,10 @@ public class TeamHelper extends HelperBase {
     public void closeInviteYourTeam() throws InterruptedException {
 
 //        Thread.sleep(5000);
-        
-        waitForElementAndClick(By.cssSelector(".eg0KI5SqghoOFd"),10);
+   //     waitForElementAndClick(By.cssSelector(".eg0KI5SqghoOFd"),10);
     //    click(By.cssSelector(".eg0KI5SqghoOFd"));
+
+
 
     }
 }

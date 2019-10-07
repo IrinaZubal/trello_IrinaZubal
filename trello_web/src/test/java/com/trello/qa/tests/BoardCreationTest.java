@@ -3,6 +3,8 @@ package com.trello.qa.tests;
 
 import com.trello.qa.model.BoardData;
 import com.trello.qa.model.TeamData;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
@@ -15,6 +17,7 @@ import java.util.Iterator;
 import java.util.List;
 
 public class BoardCreationTest extends  TestBase {
+
     @DataProvider
     public Iterator<Object[]> validBoards(){
         List<Object[]> list = new ArrayList<>();
