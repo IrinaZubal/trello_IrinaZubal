@@ -8,6 +8,7 @@ public class BoardData {
 //   }
 
 
+
     public String getBoardName() {
         return boardName;
     }
@@ -15,5 +16,12 @@ public class BoardData {
     public BoardData withBoardName(String boardName) {  //setter
         this.boardName = boardName;
         return this;
+    }
+
+    @Override
+    public String toString() {
+        return "BoardData{" +
+                "boardName='" + boardName + '\'' +
+                '}';
     }
 }

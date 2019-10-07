@@ -1,0 +1,4 @@
+20:47:01.753 [main] INFO  com.trello.qa.tests.TestBase - start test renameBoardTests
+20:47:50.721 [main] INFO  com.trello.qa.tests.TestBase - stop test renameBoardTests
+20:47:50.737 [main] INFO  com.trello.qa.tests.TestBase - start test deletionBoardTest
+20:48:42.459 [main] INFO  com.trello.qa.tests.TestBase - stop test deletionBoardTest
