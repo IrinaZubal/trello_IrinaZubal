@@ -1,0 +1,1 @@
+20:09:31.537 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: [href='/login']

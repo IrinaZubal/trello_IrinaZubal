@@ -1,0 +1,40 @@
+18:58:58.865 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: [href='/login']
+18:58:58.917 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: [href='/login']found
+18:59:01.386 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: [type=email]
+18:59:01.410 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: [type=email]found
+18:59:01.522 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: [type=email]
+18:59:01.536 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: [type=email]found
+18:59:01.569 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: [type=email]
+18:59:01.577 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: [type=email]found
+18:59:01.694 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: [type=password]
+18:59:01.706 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: [type=password]found
+18:59:01.754 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: [type=password]
+18:59:01.766 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: [type=password]found
+18:59:01.786 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: [type=password]
+18:59:01.798 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: [type=password]found
+18:59:01.850 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.id: login
+18:59:01.866 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.id: loginfound
+18:59:01.978 [Test worker] INFO  com.trello.qa.tests.TestBase - start test deleteTeamFromLeftNavMenu with parameters []
+18:59:02.009 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.xpath: //*[@class='_mtkwfAlvk6O3f']/../../..//li
+18:59:09.550 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.xpath: //*[@class='_mtkwfAlvk6O3f']/../../..//lifound
+18:59:09.551 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.xpath: //*[@class='_mtkwfAlvk6O3f']/../../..//li
+18:59:09.599 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.xpath: //*[@class='_mtkwfAlvk6O3f']/../../..//lifound
+18:59:09.603 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.xpath: //*[@class='_mtkwfAlvk6O3f']/../../..//li
+18:59:09.623 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.xpath: //*[@class='_mtkwfAlvk6O3f']/../../..//lifound
+18:59:14.720 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: ul .icon-gear.icon-sm
+18:59:14.748 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: ul .icon-gear.icon-smfound
+18:59:14.851 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: .quiet-button
+18:59:34.642 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: .quiet-buttonfound
+18:59:34.738 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: .quiet-button
+18:59:34.754 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: .quiet-buttonfound
+18:59:34.826 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: .js-confirm
+18:59:34.883 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: .js-confirmfound
+18:59:35.022 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: ._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVV
+19:00:06.848 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: ._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVVfound
+19:00:06.848 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: a[href='/']
+19:00:06.901 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
+19:00:07.277 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.xpath: //*[@class='_mtkwfAlvk6O3f']/../../..//li
+19:00:08.512 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.xpath: //*[@class='_mtkwfAlvk6O3f']/../../..//lifound
+19:00:08.512 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.xpath: //*[@class='_mtkwfAlvk6O3f']/../../..//li
+19:00:08.684 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.xpath: //*[@class='_mtkwfAlvk6O3f']/../../..//lifound
+19:00:08.688 [Test worker] INFO  com.trello.qa.tests.TestBase - stop test deleteTeamFromLeftNavMenu

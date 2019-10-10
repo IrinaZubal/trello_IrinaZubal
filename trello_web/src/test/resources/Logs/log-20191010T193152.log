@@ -1,0 +1,36 @@
+19:32:00.757 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: [href='/login']
+19:32:00.778 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: [href='/login']found
+19:32:03.044 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: [type=email]
+19:32:03.080 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: [type=email]found
+19:32:03.191 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: [type=email]
+19:32:03.205 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: [type=email]found
+19:32:03.241 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: [type=email]
+19:32:03.257 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: [type=email]found
+19:32:03.369 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: [type=password]
+19:32:03.387 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: [type=password]found
+19:32:03.441 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: [type=password]
+19:32:03.453 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: [type=password]found
+19:32:03.485 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: [type=password]
+19:32:03.497 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: [type=password]found
+19:32:03.561 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.id: login
+19:32:03.581 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.id: loginfound
+19:32:03.721 [Test worker] INFO  com.trello.qa.tests.TestBase - start test renameBoardTests with parameters []
+19:32:03.725 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.xpath: //*[@class='icon-lg icon-member']/../../..
+19:32:10.306 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..found
+19:32:10.362 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.xpath: //*[@class='icon-lg icon-member']/../../..//li
+19:32:10.386 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+19:32:10.438 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.xpath: //*[@class='icon-lg icon-member']/../../..//li
+19:32:10.450 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+19:32:10.523 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.xpath: //span[@class='js-board-editing-target board-header-btn-text']
+19:32:11.152 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.xpath: //span[@class='js-board-editing-target board-header-btn-text']found
+19:32:11.324 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.xpath: //input[@class='board-name-input js-board-name-input']
+19:32:11.348 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.xpath: //input[@class='board-name-input js-board-name-input']found
+19:32:11.348 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.xpath: //input[@class='board-name-input js-board-name-input']
+19:32:11.371 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.xpath: //input[@class='board-name-input js-board-name-input']found
+19:32:11.521 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: ._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVV
+19:32:41.556 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: ._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVVfound
+19:32:41.560 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: a[href='/']
+19:32:41.589 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
+19:32:42.302 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.xpath: //*[@class='icon-lg icon-member']/../../..//li
+19:32:47.513 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+19:32:47.545 [Test worker] INFO  com.trello.qa.tests.TestBase - stop test renameBoardTests

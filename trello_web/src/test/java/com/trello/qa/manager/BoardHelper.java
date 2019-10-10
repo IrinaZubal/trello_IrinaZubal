@@ -2,6 +2,7 @@ package com.trello.qa.manager;
 
 import com.trello.qa.model.BoardData;
 import org.openqa.selenium.By;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -40,6 +41,8 @@ public class BoardHelper extends HelperBase{
     public void clickOnFirstPrivateBoard() {
         new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@class='icon-lg icon-member']/../../..//li")));
         click(By.xpath("//*[@class='icon-lg icon-member']/../../..//li"));
+
+
     }
 
     public void changeBoardName(String BoardName) {
@@ -67,6 +70,7 @@ public class BoardHelper extends HelperBase{
         confirmBoardCreation();
         returnToHomePage();
         refreshPage();
+        takeScreenshot();
     }
 
     public boolean findBoardByName(String nBoardName) {

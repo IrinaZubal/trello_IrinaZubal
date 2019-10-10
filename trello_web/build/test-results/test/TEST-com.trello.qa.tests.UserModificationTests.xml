@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.trello.qa.tests.UserModificationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-10-10T18:10:53" hostname="DESKTOP-79N8AM4" time="21.115">
+  <properties/>
+  <testcase name="changeAvatarTest" classname="com.trello.qa.tests.UserModificationTests" time="21.115"/>
+  <system-out><![CDATA[21:10:53.152 [Test worker] INFO  com.trello.qa.tests.TestBase - start test changeAvatarTest with parameters []
+21:10:53.152 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: [data-test-id='header-member-menu-button']
+21:10:59.745 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: [data-test-id='header-member-menu-button']found
+21:10:59.863 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: [data-test-id='header-member-menu-profile']
+21:10:59.891 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: [data-test-id='header-member-menu-profile']found
+21:11:00.007 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: .rsiNque2CCqtPE
+21:11:00.969 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: .rsiNque2CCqtPEfound
+21:11:01.213 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.name: file
+21:11:01.232 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.name: filefound
+21:11:14.281 [Test worker] INFO  com.trello.qa.tests.TestBase - stop test changeAvatarTest
+---------------------------------------------------------------------------
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

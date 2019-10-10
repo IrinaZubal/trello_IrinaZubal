@@ -29,6 +29,7 @@ public class TeamDeletionTest extends TestBase {
                 .until(ExpectedConditions.elementToBeClickable(By.cssSelector(".quiet-button")));
         app.getTeamHelper().click(By.cssSelector(".quiet-button"));
         app.getTeamHelper().click(By.cssSelector(".js-confirm"));
+
     }
 
     public void clickOnFirstTeam() {

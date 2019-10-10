@@ -1,0 +1,46 @@
+18:55:29.837 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: [href='/login']
+18:55:29.877 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: [href='/login']found
+18:55:32.472 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: [type=email]
+18:55:32.496 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: [type=email]found
+18:55:32.644 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: [type=email]
+18:55:32.656 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: [type=email]found
+18:55:32.721 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: [type=email]
+18:55:32.735 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: [type=email]found
+18:55:32.874 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: [type=password]
+18:55:32.910 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: [type=password]found
+18:55:32.964 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: [type=password]
+18:55:32.979 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: [type=password]found
+18:55:33.007 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: [type=password]
+18:55:33.019 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: [type=password]found
+18:55:33.083 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.id: login
+18:55:33.107 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.id: loginfound
+18:55:33.191 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: [data-test-id='header-member-menu-button']
+18:55:39.898 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: [data-test-id='header-member-menu-button']found
+18:55:39.958 [Test worker] INFO  com.trello.qa.tests.TestBase - start test deletionBoardTest with parameters []
+18:55:39.958 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.xpath: //*[@class='icon-lg icon-member']/../../..
+18:55:39.986 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..found
+18:55:39.990 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.xpath: //*[@class='icon-lg icon-member']/../../..//li
+18:55:40.010 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+18:55:40.050 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.xpath: //*[@class='icon-lg icon-member']/../../..//li
+18:55:40.074 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+18:55:40.135 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.xpath: //*[@class='icon-lg icon-member']/../../..//li
+18:55:40.154 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+18:55:50.239 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: .board-header-btn.mod-show-menu
+18:55:50.308 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: .board-header-btn.mod-show-menufound
+18:55:50.368 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: .js-open-more
+18:55:50.404 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: .js-open-morefound
+18:55:50.523 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: [class='board-menu-navigation-item-link js-close-board']
+18:55:50.552 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: [class='board-menu-navigation-item-link js-close-board']found
+18:55:50.624 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: [class='js-confirm full negate']
+18:55:50.650 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: [class='js-confirm full negate']found
+18:55:55.250 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.xpath: //a[@class='quiet js-delete']
+18:55:55.330 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.xpath: //a[@class='quiet js-delete']found
+18:55:55.457 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.xpath: //input[@class='js-confirm full negate']
+18:55:55.482 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.xpath: //input[@class='js-confirm full negate']found
+18:55:55.562 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: ._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVV
+18:56:25.587 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: ._3gUubwRZDWaOF0._2WhIqhRFBTG7Ry._2NubQcQM83YCVVfound
+18:56:25.587 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.cssSelector: a[href='/']
+18:56:25.639 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.cssSelector: a[href='/']found
+18:56:26.332 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - Start search element By.xpath: //*[@class='icon-lg icon-member']/../../..//li
+18:56:28.556 [Test worker] INFO  c.t.q.m.ApplicationManager$MyListener - By.xpath: //*[@class='icon-lg icon-member']/../../..//lifound
+18:56:28.564 [Test worker] INFO  com.trello.qa.tests.TestBase - stop test deletionBoardTest

@@ -26,7 +26,6 @@ public class BoardCreationTest extends  TestBase {
         list.add(new Object[]{"12346"});
         list.add(new Object[]{"*&&^%$#"});
         list.add(new Object[]{"board BOARD"});
-        list.add(new Object[]{"לוח"});
 
         return list.iterator();
     }
