@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.trello.qa.tests.OpenAppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-11T18:44:09" hostname="DESKTOP-79N8AM4" time="0.002">
+  <properties/>
+  <testcase name="openAppTest" classname="com.trello.qa.tests.OpenAppTest" time="0.002"/>
+  <system-out><![CDATA[20:44:09.134 [Test worker] INFO com.trello.qa.tests.TestBase - start test openAppTest with parameters []
+20:44:09.147 [Test worker] INFO com.trello.qa.tests.TestBase - App opened
+20:44:09.150 [Test worker] INFO com.trello.qa.tests.TestBase - stop test openAppTest
+---------------------------------------------------------------------------
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

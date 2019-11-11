@@ -1,17 +1,21 @@
+package com.trello.qa.manager;
+
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class OpenAppTest {
+public class ApplicationManager {
+
     AppiumDriver driver;
-    @BeforeMethod
-    public void setUp() throws MalformedURLException {
+    TeamHelper teamHelper;
+    BoardHelper boardHelper;
+    SessionHelper sessionHelper;
+    UserHelper userHelper;
+
+    public void init() throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
         capabilities.setCapability("platformName", "Android");
@@ -24,16 +28,32 @@ public class OpenAppTest {
 
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
 
+        teamHelper = new TeamHelper(driver);
+        boardHelper = new BoardHelper(driver);
+        sessionHelper = new SessionHelper(driver);
+        userHelper = new UserHelper(driver);
 
-    }
-    @Test
-    public void openAppTest(){
-        System.out.println("App opened");
-
-    }
-    @AfterMethod
-    public void tearDown(){
-
+        sessionHelper.login("irinaz.inbox@gmail.com", "kh17rina91");
     }
 
+
+    public void stop() {
+        driver.quit();
+    }
+
+    public TeamHelper getTeamHelper() {
+        return teamHelper;
+    }
+
+    public BoardHelper getBoardHelper() {
+        return boardHelper;
+    }
+
+    public SessionHelper getSessionHelper() {
+        return sessionHelper;
+    }
+
+    public UserHelper getUserHelper() {
+        return userHelper;
+    }
 }
