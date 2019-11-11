@@ -115,4 +115,8 @@ public class BoardHelper extends HelperBase{
         waitForElementAndClick(By.xpath("//a[@class='quiet js-delete']"), 20);
         click(By.xpath("//input[@class='js-confirm full negate']"));
     }
+//****************************************************************************************
+    public void clickOnPlusButton() {
+click(By.id("add_fab"));
+    }
 }
