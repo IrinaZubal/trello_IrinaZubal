@@ -117,6 +117,7 @@ public class BoardHelper extends HelperBase{
     }
 //****************************************************************************************
     public void clickOnPlusButton() {
-click(By.id("add_fab"));
+
+        click(By.id("add_fab"));
     }
 }
