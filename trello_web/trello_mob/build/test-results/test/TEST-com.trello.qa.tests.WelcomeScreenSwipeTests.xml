@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.trello.qa.tests.WelcomeScreenSwipeTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-18T19:06:15" hostname="DESKTOP-79N8AM4" time="3.42">
+  <properties/>
+  <testcase name="swipeToLeftTest" classname="com.trello.qa.tests.WelcomeScreenSwipeTests" time="3.42"/>
+  <system-out><![CDATA[21:06:15.286 [Test worker] INFO com.trello.qa.tests.TestBase - start test swipeToLeftTest with parameters []
+21:06:18.731 [Test worker] INFO com.trello.qa.tests.TestBase - stop test swipeToLeftTest
+---------------------------------------------------------------------------
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
